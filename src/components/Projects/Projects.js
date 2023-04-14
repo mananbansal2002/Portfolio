@@ -2,12 +2,11 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
-import leaf from "../../Assets/Projects/leaf.png";
-import emotion from "../../Assets/Projects/emotion.png";
-import editor from "../../Assets/Projects/codeEditor.png";
-import chatify from "../../Assets/Projects/chatify.png";
-import suicide from "../../Assets/Projects/suicide.png";
-import bitsOfCode from "../../Assets/Projects/blog.png";
+import imagify from "../../Assets/Projects/imagify.png";
+import extensions from "../../Assets/Projects/extensions.png";
+import roadmap from "../../Assets/Projects/roadmap.png";
+import CF from "../../Assets/Projects/consistent-code.png";
+import Blog from "../../Assets/Projects/blog.png";
 
 function Projects() {
   return (
@@ -21,70 +20,60 @@ function Projects() {
           Here are a few projects I've worked on recently.
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+     
+
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={chatify}
+              imgPath={Blog}
               isBlog={false}
-              title="Chatify"
-              description="Personal Chat Room or Workspace to share resources and hangout with friends build with react.js, Material-UI, and Firebase. Have features which allows user for realtime messaging, image sharing as well as supports reactions on messages."
-              ghLink="https://github.com/soumyajit4419/Chatify"
-              demoLink="https://chatify-49.web.app/"
+              title="Blogify"
+              description="Dynamic React JS blog website with an advanced filtering feature for effortless browsing. Sleek and intuitive user interface that's fully responsive and optimized for search engines. Utilizes HTML, CSS, and JavaScript, as well as Redux and React Router libraries for seamless functionality. A valuable resource for staying informed on the latest news and trends."
+              ghLink="https://github.com/mananbansal2002/Blogify"
+              demoLink="https://myblogify.netlify.app/"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={bitsOfCode}
+              imgPath={CF}
               isBlog={false}
-              title="Bits-0f-C0de"
-              description="My personal blog page build with Next.js and Tailwind Css which takes the content from makdown files and renders it using Next.js. Supports dark mode and easy to write blogs using markdown."
-              ghLink="https://github.com/soumyajit4419/Bits-0f-C0de"
-              demoLink="https://blogs.soumya-jit.tech/"
+              title="Consistent Code"
+              description="Consistent Code is a powerful platform that leverages Codeforces API to offer a personalized Problem of the Day experience. With advanced filtering options based on difficulty levels and ratings, our sleek and modern website caters to programmers of all levels. Our growing community of over 29,000 active users provides ample opportunities for networking and collaboration. Built using cutting-edge technology, Consistent Code is constantly updated with fresh and relevant content, making it an essential tool for improving your programming skills."
+              ghLink="https://github.com/mananbansal2002/Codeforces-extension"
+              demoLink="http://consistent-code.netlify.com/"              
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={editor}
+              imgPath={extensions}
               isBlog={false}
-              title="Editor.io"
-              description="Online code and markdown editor build with react.js. Online Editor which supports html, css, and js code with instant view of website. Online markdown editor for building README file which supports GFM, Custom Html tags with toolbar and instant preview.Both the editor supports auto save of work using Local Storage"
-              ghLink="https://github.com/soumyajit4419/Editor.io"
-              demoLink="https://editor.soumya-jit.tech/"              
+              title="Browser Extensions"
+              description="Experience a better browsing experience with Dark Mode and Nature Sounds extensions, designed to enhance your productivity and relaxation. The Dark Mode extension minimizes eye strain and maximizes focus, while the Nature Sounds extension brings the calming effects of nature to your browser. Both extensions have sleek and intuitive interfaces, making it easy to customize and personalize your browsing experience. Elevate your browsing experience today and try the Dark Mode and Nature Sounds extensions."
+              ghLink="https://github.com/mananbansal2002/3-Browser-Extensions"
+              demoLink="https://microsoftedge.microsoft.com/addons/search?developer=Manan%20Bansal"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={leaf}
+              imgPath={imagify}
               isBlog={false}
-              title="Plant AI"
-              description="Used the plant disease dataset from Kaggle and trained a image classifer model using 'PyTorch' framework using CNN and Transfer Learning with 38 classes of various plant leaves. The model was successfully able to detect diseased and healthy leaves of 14 unique plants. I was able to achieve an accuracy of 98% by using Resnet34 pretrained model."
-              ghLink="https://github.com/soumyajit4419/Plant_AI"
-              demoLink="https://plant49-ai.herokuapp.com/"
+              title="Imagify"
+              description="Discover stunning photography from around the world on our platform where photographers of all levels can showcase their work. Our website provides a space where anyone can view and enjoy an array of photos, ranging from landscapes to portraits. With a user-friendly interface, it's easy to navigate and explore the various collections. Join our community of photographers and enthusiasts today and discover the beauty of the world through the lens."
+              ghLink="https://github.com/mananbansal2002/imagify"
+              demoLink="https://imagify2002.netlify.app/"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={suicide}
+              imgPath={roadmap}
               isBlog={false}
-              title="Ai For Social Good"
-              description="Using 'Natural Launguage Processing' for the detection of suicide-related posts and user's suicide ideation in cyberspace  and thus helping in sucide prevention."
-              ghLink="https://github.com/soumyajit4419/AI_For_Social_Good"
-              // demoLink="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley" <--------Please include a demo link here
-            />
-          </Col>
-
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={emotion}
-              isBlog={false}
-              title="Face Recognition and Emotion Detection"
-              description="Trained a CNN classifier using 'FER-2013 dataset' with Keras and tensorflow backened. The classifier sucessfully predicted the various types of emotions of human. And the highest accuracy obtained with the model was 60.1%.
-              Then used Open-CV to detect the face in an image and then pass the face to the classifer to predict the emotion of a person."
-              ghLink="https://github.com/soumyajit4419/Face_And_Emotion_Detection"
-              // demoLink="https://blogs.soumya-jit.tech/"      <--------Please include a demo link here 
+              title="PlanGenie"
+              description="PlanGenie is a platform that allows you to create stunning roadmaps on any topic. With GPT technology, you can easily turn your ideas into a beautiful and informative roadmap. Our user-friendly interface and innovative features make planning and organizing easier and more efficient for individuals and teams. Join PlanGenie today and bring your ideas to life with modern, visually stunning roadmaps."
+              ghLink="https://github.com/mananbansal2002/Roadmap-IT"
+              demoLink="https://mananbansal2002.github.io/Roadmap-IT/"
             />
           </Col>
         </Row>
