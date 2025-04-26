@@ -1,79 +1,141 @@
-import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
-import ProjectCard from "./ProjectCards";
-import Particle from "../Particle";
-import imagify from "../../Assets/Projects/imagify.png";
-import extensions from "../../Assets/Projects/extensions.png";
-import roadmap from "../../Assets/Projects/roadmap.png";
-import CF from "../../Assets/Projects/consistent-code.png";
-import Blog from "../../Assets/Projects/blog.png";
+import React from 'react';
+import { Container, Row, Col } from 'react-bootstrap';
+import ProjectCard from './ProjectCards';
+import Particle from '../Particle';
+
+import mmpranjal from '../../Assets/Projects/mmpranjal.png';
+import extensions from '../../Assets/Projects/extensions.png';
+import roadmap from '../../Assets/Projects/roadmap.png';
+import CF from '../../Assets/Projects/consistent-code.png';
+import bhagwatibazaar from '../../Assets/Projects/bhagwatibazaar.png';
+import figma1 from '../../Assets/Projects/figma1.png';
+import figma2 from '../../Assets/Projects/figma2.png';
 
 function Projects() {
   return (
-    <Container fluid className="project-section">
+    <Container
+      fluid
+      className='project-section'
+    >
       <Particle />
       <Container>
-        <h1 className="project-heading">
-          My Recent <strong className="purple">Works </strong>
+        {/* Web Projects Section */}
+        <h1 className='project-heading'>
+          My Recent <strong className='purple'>Projects</strong>
         </h1>
-        <p style={{ color: "white" }}>
-          Here are a few projects I've worked on recently.
+        <p style={{ color: 'white' }}>
+          Here are a few coding projects I've worked on recently.
         </p>
-        <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
-     
-
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={Blog}
-              isBlog={false}
-              title="Blogify"
-              description="Dynamic React JS blog website with an advanced filtering feature for effortless browsing. Sleek and intuitive user interface that's fully responsive and optimized for search engines. Utilizes HTML, CSS, and JavaScript, as well as Redux and React Router libraries for seamless functionality. A valuable resource for staying informed on the latest news and trends."
-              ghLink="https://github.com/mananbansal2002/Blogify"
-              demoLink="https://myblogify.netlify.app/"
-            />
-          </Col>
-
-          <Col md={4} className="project-card">
+        <Row style={{ justifyContent: 'center', paddingBottom: '10px' }}>
+          {/* All your website/app projects */}
+          <Col
+            md={4}
+            className='project-card'
+          >
             <ProjectCard
               imgPath={CF}
               isBlog={false}
-              title="Consistent Code"
-              description="Consistent Code is a powerful platform that leverages Codeforces API to offer a personalized Problem of the Day experience. With advanced filtering options based on difficulty levels and ratings, our sleek and modern website caters to programmers of all levels. Our growing community of over 29,000 active users provides ample opportunities for networking and collaboration. Built using cutting-edge technology, Consistent Code is constantly updated with fresh and relevant content, making it an essential tool for improving your programming skills."
-              ghLink="https://github.com/mananbansal2002/Codeforces-extension"
-              demoLink="http://consistent-code.netlify.com/"              
+              title='Consistent Code'
+              description='Consistent Code is a platform leveraging Codeforces API for Problem of the Day...'
+              ghLink='https://github.com/mananbansal2002/Codeforces-extension'
+              demoLink='http://consistent-code.netlify.com/'
             />
           </Col>
 
-          <Col md={4} className="project-card">
+          <Col
+            md={4}
+            className='project-card'
+          >
             <ProjectCard
               imgPath={extensions}
               isBlog={false}
-              title="Browser Extensions"
-              description="Experience a better browsing experience with Dark Mode and Nature Sounds extensions, designed to enhance your productivity and relaxation. The Dark Mode extension minimizes eye strain and maximizes focus, while the Nature Sounds extension brings the calming effects of nature to your browser. Both extensions have sleek and intuitive interfaces, making it easy to customize and personalize your browsing experience. Elevate your browsing experience today and try the Dark Mode and Nature Sounds extensions."
-              ghLink="https://github.com/mananbansal2002/3-Browser-Extensions"
-              demoLink="https://microsoftedge.microsoft.com/addons/search?developer=Manan%20Bansal"
+              title='Browser Extensions'
+              description='Dark Mode and Nature Sounds browser extensions for enhanced productivity...'
+              ghLink='https://github.com/mananbansal2002/3-Browser-Extensions'
+              demoLink='https://microsoftedge.microsoft.com/addons/search?developer=Manan%20Bansal'
             />
           </Col>
 
-          <Col md={4} className="project-card">
+          <Col
+            md={4}
+            className='project-card'
+          >
             <ProjectCard
-              imgPath={imagify}
+              imgPath={mmpranjal}
               isBlog={false}
-              title="Imagify"
-              description="Discover stunning photography from around the world on our platform where photographers of all levels can showcase their work. Our website provides a space where anyone can view and enjoy an array of photos, ranging from landscapes to portraits. With a user-friendly interface, it's easy to navigate and explore the various collections. Join our community of photographers and enthusiasts today and discover the beauty of the world through the lens."
-              ghLink="https://github.com/mananbansal2002/imagify"
-              demoLink="https://imagify2002.netlify.app/"
+              title='MM Pranjal Industries'
+              description='A customizable landing page built for MM Pranjal Industries to highlight their brand and services.'
+              ghLink='https://github.com/mananbansal2002/mmpranjal'
+              demoLink='https://mmpranjal.com/'
             />
           </Col>
 
-          <Col md={4} className="project-card">
+          <Col
+            md={4}
+            className='project-card'
+          >
+            <ProjectCard
+              imgPath={bhagwatibazaar}
+              isBlog={false}
+              title='Bhagwati Bazaar'
+              description='An online presence platform built for Bhagwati Bazaar using React hydration.'
+              ghLink='https://github.com/mananbansal2002/bhagwati-bazaar'
+              demoLink='https://bhagwatibazaar.com/'
+            />
+          </Col>
+
+          <Col
+            md={4}
+            className='project-card'
+          >
             <ProjectCard
               imgPath={roadmap}
               isBlog={false}
-              title="PlanGenie"
-              description="PlanGenie is a platform that allows you to create stunning roadmaps on any topic. With GPT technology, you can easily turn your ideas into a beautiful and informative roadmap. Our user-friendly interface and innovative features make planning and organizing easier and more efficient for individuals and teams. Join PlanGenie today and bring your ideas to life with modern, visually stunning roadmaps."
-              ghLink="https://github.com/mananbansal2002/Roadmap-IT"
-              demoLink="https://mananbansal2002.github.io/Roadmap-IT/"
+              title='GPTMapper'
+              description='Create stunning topic roadmaps using Mistral AI with GPTMapper.'
+              ghLink='https://github.com/mananbansal2002/GPTMap'
+              demoLink='https://gptmapper.netlify.app'
+            />
+          </Col>
+        </Row>
+
+        {/* Figma Designs Section */}
+        <h1
+          className='project-heading'
+          style={{ marginTop: '60px' }}
+        >
+          My Recent <strong className='purple'>Figma Designs</strong>
+        </h1>
+        <p style={{ color: 'white' }}>
+          Some UI/UX and prototype designs I created on Figma.
+        </p>
+        <Row style={{ justifyContent: 'center', paddingBottom: '10px' }}>
+          {/* All your Figma designs */}
+          <Col
+            md={4}
+            className='project-card'
+          >
+            <ProjectCard
+              imgPath={figma1}
+              isBlog={false}
+              title='Starting Out Copmany Landing Page Design'
+              // description='A minimalistic landing page design focused on modern UI, smooth scroll, and clear call-to-actions.'
+              // ghLink='https://www.figma.com/file/yourfigmalink1'
+              demoLink='https://www.figma.com/design/s0r0T0pTuCpa7HU02zDhy1/starting-core-website?node-id=0-1&p=f&t=CtorubcVGxl4WCtR-0'
+            />
+          </Col>
+
+          <Col
+            md={4}
+            className='project-card'
+          >
+            <ProjectCard
+              imgPath={figma2}
+              isBlog={false}
+              title='Portfolio Design'
+              // description='A mobile app interface built around maximizing productivity with clean navigation and intuitive UX flows.'
+              // ghLink='https://www.figma.com/file/yourfigmalink2'
+              demoLink='https://www.figma.com/design/e6jjJ3ltuqXbDcbKUIzMpU/Untitled?node-id=0-1&p=f&t=5L14wLEXYEBjRCEW-0'
             />
           </Col>
         </Row>
