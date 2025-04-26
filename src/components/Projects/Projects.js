@@ -8,6 +8,8 @@ import extensions from '../../Assets/Projects/extensions.png';
 import roadmap from '../../Assets/Projects/roadmap.png';
 import CF from '../../Assets/Projects/consistent-code.png';
 import bhagwatibazaar from '../../Assets/Projects/bhagwatibazaar.png';
+import webcrawler from '../../Assets/Projects/web_crawler.png';
+
 import figma1 from '../../Assets/Projects/figma1.png';
 import figma2 from '../../Assets/Projects/figma2.png';
 
@@ -28,6 +30,35 @@ function Projects() {
         </p>
         <Row style={{ justifyContent: 'center', paddingBottom: '10px' }}>
           {/* All your website/app projects */}
+
+          <Col
+            md={4}
+            className='project-card'
+          >
+            <ProjectCard
+              imgPath={roadmap}
+              isBlog={false}
+              title='GPTMapper'
+              description='Create stunning topic roadmaps using Mistral AI with GPTMapper.'
+              ghLink='https://github.com/mananbansal2002/GPTMap'
+              demoLink='https://gptmapper.netlify.app'
+            />
+          </Col>
+
+          <Col
+            md={4}
+            className='project-card'
+          >
+            <ProjectCard
+              imgPath={webcrawler}
+              isBlog={false}
+              title='General E-Commerce Web Scraper'
+              description='Built a configurable crawler with Node.js, Puppeteer, and Cheerio, scraping 1.8M+ product URLs from Flipkart, Nykaa, TataCliq, Westside, and Virgio. Used depth-based BFS for accurate extraction and added headful fallback for edge cases. Modular design for easy site-specific configurations.'
+              ghLink='https://github.com/mananbansal2002/General-E-commerce-Crawler/'
+              demoLink='https://github.com/mananbansal2002/General-E-commerce-Crawler/tree/main/results'
+            />
+          </Col>
+
           <Col
             md={4}
             className='project-card'
@@ -81,20 +112,6 @@ function Projects() {
               description='An online presence platform built for Bhagwati Bazaar using React hydration.'
               ghLink='https://github.com/mananbansal2002/bhagwati-bazaar'
               demoLink='https://bhagwatibazaar.com/'
-            />
-          </Col>
-
-          <Col
-            md={4}
-            className='project-card'
-          >
-            <ProjectCard
-              imgPath={roadmap}
-              isBlog={false}
-              title='GPTMapper'
-              description='Create stunning topic roadmaps using Mistral AI with GPTMapper.'
-              ghLink='https://github.com/mananbansal2002/GPTMap'
-              demoLink='https://gptmapper.netlify.app'
             />
           </Col>
         </Row>
