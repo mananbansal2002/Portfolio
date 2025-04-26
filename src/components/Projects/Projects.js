@@ -64,6 +64,20 @@ function Projects() {
             className='project-card'
           >
             <ProjectCard
+              imgPath={roadmap}
+              isBlog={false}
+              title='AutoInd (AI Auto-Blogger)'
+              description='AutoInk is a fully AI-powered personal blog that writes itself. Designed with a custom dark theme, the site generates and publishes new, engaging blog posts automatically—no manual writing needed. Just set the vibe, and the blog keeps growing with fresh content on its own.'
+              ghLink='https://github.com/mananbansal2002/Auto-AI-Blog'
+              demoLink='https://mananbansal2002.github.io/Auto-AI-Blog/index.html'
+            />
+          </Col>
+
+          <Col
+            md={4}
+            className='project-card'
+          >
+            <ProjectCard
               imgPath={CF}
               isBlog={false}
               title='Consistent Code'
